@@ -10,12 +10,12 @@
  *
  */
 
-namespace ManagedPixels\PluginStarter\Components;
+namespace ManagedPixels\Clientadmin\Components;
 
 use Cms\Classes\ComponentBase;
 
 
-class Starter extends ComponentBase
+class Settings extends ComponentBase
 {
 
 
@@ -25,8 +25,8 @@ class Starter extends ComponentBase
    */
   public function componentDetails() {
     return [
-      'name' => "Starter",
-      'description' => 'A simple starter component'
+      'name' => "Client Settings",
+      'description' => 'Setup admin'
     ];
   }
 

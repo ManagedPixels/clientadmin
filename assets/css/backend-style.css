@@ -1,3 +1,7 @@
+body {
+  -webkit-font-smoothing:antialiased !important;
+}
+
 .control-settings .settings-items .settings-item > a .item-icon i {
    font-size: 36px !important;
    line-height: 64px;
@@ -6,10 +10,14 @@
  nav#layout-mainmenu.navbar ul li a i,
 nav#layout-mainmenu .menu-toggle i,
 .mainmenu-collapsed li a i {
-  font-size: 18px;
+  font-size: 22px;
   vertical-align: middle;
   margin-right: 10px;
 }
+
+/*nav#layout-mainmenu.navbar ul li a:active {
+color: #f89b06 !important;
+}*/
 
 .navbar .layout-cell {
   display: table-cell;

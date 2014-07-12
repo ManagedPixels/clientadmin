@@ -12,7 +12,7 @@
  */
 
 
-namespace ManagedPixels\Pluginstarter ;
+namespace ManagedPixels\Clientadmin ;
 /**
  * class imports
  */
@@ -30,10 +30,10 @@ class Plugin extends PluginBase {
 public function pluginDetails() {
 
         return [
-            'name'        => 'Starters',
-            'description' => 'Start your plugin',
+            'name'        => 'Client Admin',
+            'description' => 'Client Site Admin',
             'author'      => 'shawn sandy',
-            'icon'        => 'icon-exclamation-triangle'
+            'icon'        => 'icon-sitemap'
         ];
 
 }
@@ -48,7 +48,7 @@ public function boot(){
  */
 public function registerComponents() {
       return [
-        '\ManagedPixels\Pluginstarter\Components\Starter' => 'pluginStarter'
+        '\ManagedPixels\Clientadmin\Components\Settings' => 'caSetting'
       ];
   }
 
@@ -63,11 +63,11 @@ public function registerComponents() {
 
     return [
       'start' => [
-        'label' => 'Start Here',
-        'icon' => 'icon-exclamation-triangle',
-        'url' => Backend::url('managedpixels/pluginstarter/start'),
-        'permission' => ['managedpixels.pluginstarter.*'],
-        'order' => 500
+        'label' => 'Client Admin',
+        'icon' => 'icon-sitemap',
+        'url' => Backend::url('managedpixels/clientadmin/admin'),
+        'permission' => ['managedpixels.clientadmin.*'],
+        'order' => 100
         ]
       ];
   }
@@ -79,7 +79,7 @@ public function registerComponents() {
  */
   public function registerPermissions() {
     return [
-      'managedpixels.pluginstarter.access_start' => ['label' => 'Access Start', 'tab' => 'Start']
+      'managedpixels.clientadmin.access_admin' => ['label' => 'Access Client Admin', 'tab' => 'Access Client Admin']
     ];
   }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace ManagedPixels\Pluginstarter\Controllers;
+namespace ManagedPixels\Clientadmin\Controllers;
 
 // class imports
 use Flash;
@@ -10,10 +10,10 @@ use Backend\Classes\Controller;
 /**
  *
  */
-class Start extends Controller
+class Admin extends Controller
 {
 
-  public $pageTitle="My Starter Plugin";
+  public $pageTitle="Client Admin";
 
 /**
  * http://octobercms.com/docs/plugin/components#component-class-definition
@@ -21,9 +21,9 @@ class Start extends Controller
   public function __construct()
   {
     parent::__construct();
-    BackendMenu::setContext('ManagedPixels.Pluginstarter','start');
+    BackendMenu::setContext('ManagedPixels.Clientadmin','caAdmin');
     //inject page assets - http://octobercms.com/docs/plugin/components#component-assets
-    $this->addCss('/plugins/managedpixels/pluginstarter/assets/css/starter-style.css');
+    $this->addCss('/plugins/managedpixels/clientadmin/assets/css/backend-style.css');
   }
 
  /**
