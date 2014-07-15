@@ -24,6 +24,9 @@ class Admin extends Controller
     BackendMenu::setContext('ManagedPixels.Clientadmin','caAdmin');
     //inject page assets - http://octobercms.com/docs/plugin/components#component-assets
     $this->addCss('/plugins/managedpixels/clientadmin/assets/css/backend-style.css');
+
+    $this->layout = 'default';
+    $this->layoutPath = ['plugins/managedpixels/clientadmin/layouts'];
   }
 
  /**
